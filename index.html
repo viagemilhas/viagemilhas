@@ -2,11 +2,20 @@
 <html>
 <head>
     <title>Viagemilhas</title>
+    <!-- CHAMANDO O ICONE DO SITE, ESTANDO DENTRO DA PASTA IMG -->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+     <!-- CHAMANDO O CSS RESPONSAVEL PELOS CARDS DA HOME, ESTANDO DENTRO DA PASTA CSS -->
     <link rel="stylesheet" href="css/home.css"/>
+    <!-- CHAMANDO O CSS GLOBAL, ESTANDO DENTRO DA PASTA CSS -->
+    <link rel="stylesheet" href="css/global.css"/>
+    <!-- CHAMANDO O CSS DO HEADER, ESTANDO DENTRO DA PASTA CSS + COMPONENTS -->
+    <link rel="stylesheet" href="css/components/header.css"/>
+    <!-- CHAMANDO O JAVASCRIPT, RESPONSAVEL PELO CARROSSEL, ESTANDO DENTRO DA PASTA CSS + COMPONENTS -->
     <link rel="stylesheet" href="css/components/carrossel.css"/>
-
+    <!-- CHAMANDO O JAVASCRIPT, ESTANDO DENTRO DA PASTA JS -->
     <script type="text/javascript" src="js/index.js"></script>
+    <!-- CHAMANDO O FOOTER, ESTANDO DENTRO DA PASTA CSS -->
+    <link rel="stylesheet" href="css/components/footer.css"/>
 </head>
 <body onload="showSlides()">
     <header class="header-home">
@@ -49,9 +58,76 @@
   <span class="dot"></span> 
 </div>
 
+<!-- CRIANDO A SEÇÃO1 REFERENTE AOS CARDS -->
+<div class="secao1">
+    <h1 class="titulo-secao">LUGARES A CONHECER</h1>
 
-<h1>aaaaaaaaaaaaaaaaaaaa</h1>
-<p>This is a paragraph.</p>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/image 9.png" alt="Avatar">
+            <h2>Card 1</h2>
+            <p>Conteúdo do Card 1.</p>
+        </div>
+    
+        <div class="card">
+            <img src="img/image 10.png" alt="Avatar">
+            <h2>Card 2</h2>
+            <p>Conteúdo do Card 2.</p>
+        </div>
+    
+        <div class="card">
+            <img src="img/image 11.png" alt="Avatar">
+            <h2>Card 3</h2>
+            <p>Conteúdo do Card 3.</p>
+        </div>
+
+        
+
+        <div class="card">
+            <img src="img/image 13.png" alt="Avatar">
+            <h2>Card 4</h2>
+            <p>Conteúdo do Card 4.</p>
+        </div>
+        <div class="card">
+            <img src="img/image 12.png" alt="Avatar">
+            <h2>Card 5</h2>
+            <p>Conteúdo do Card 5.</p>
+        </div>
+        <div class="card">
+            <img src="img/image 14.png" alt="Avatar">
+            <h2>Card 6</h2>
+            <p>Conteúdo do Card 6.</p>
+        </div>
+        
+    </div>
+    <!-- CRIANDO BOTÃO VER MAIS DA HOME -->
+    <button class="btn-secao">VER MAIS</button>
+</div>
+
+<!-- CRIANDO A SEÇÃO2 REFERENTE AO MAPS -->
+<div class="secao2">
+    <h1 class="titulo-secao">NOSSA LOCALIZAÇÃO</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.0019742552927!2d-46.73036142534401!3d-23.520813660102455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e1!3m2!1spt-BR!2sbr!4v1697675557694!5m2!1spt-BR!2sbr" width="80%" height="450" style="border:0; padding-top: 20px; padding-bottom: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- CRIANDO FOOTER -->
+<footer class="footer-container">
+    <p class="text-footer">&copy;  2023 Viagemilhas LTDA.</p>
+
+    <div class="btn-icon-footer">
+        <a href="https://www.facebook.com/profile.php?id=61552068467225&is_tour_dismissed=true" target="_blank">
+            <img src="img/facebook.png">
+        </a>
+
+        <a href="https://www.instagram.com/viagem_milhas_2008/" target="_blank">
+            <img src="img/instagram.png">
+        </a>
+
+        <a href="https://www.linkedin.com/in/viagem-milhas-466581295/" target="_blank">
+            <img src="img/linkedin.png">
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>
