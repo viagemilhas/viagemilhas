@@ -3,10 +3,10 @@
 
 /* Resetando o css*/
 
-html, body, div, span, applet, object, iframe,
+html, body, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, ins, kbd, q, s, samp,
 small, strike, b, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
@@ -97,4 +97,5 @@ body{
     --fundo-cinza-claro:#F2F2F2;
     --titulo-cinza-escuro:#707070;
     --titulo-branco:#ffffff;
+    --titulo-preto:black;
 }

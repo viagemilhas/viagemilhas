@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/components/carrossel.css"/>
     <!-- CHAMANDO O JAVASCRIPT, ESTANDO DENTRO DA PASTA JS -->
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
     <!-- CHAMANDO O FOOTER, ESTANDO DENTRO DA PASTA CSS -->
     <link rel="stylesheet" href="css/components/footer.css"/>
 </head>
@@ -64,44 +65,110 @@
 
     <div class="card-container">
         <div class="card">
-            <img src="img/image 9.png" alt="Avatar">
-            <h2>Card 1</h2>
-            <p>Conteúdo do Card 1.</p>
-        </div>
-    
-        <div class="card">
-            <img src="img/image 10.png" alt="Avatar">
-            <h2>Card 2</h2>
-            <p>Conteúdo do Card 2.</p>
-        </div>
-    
-        <div class="card">
-            <img src="img/image 11.png" alt="Avatar">
-            <h2>Card 3</h2>
-            <p>Conteúdo do Card 3.</p>
+            <img src="img/image 9.png" alt="Avatar" class="img-cards">
+            <div class="informacao-cards">
+              <div class="texto-cards">
+                <h2>Salvador</h2>
+                <p>A partir de R$ 300</p>
+                <button class="btn-secao-card">SAIBA MAIS</button>
+              </div>
+            </div>
         </div>
 
+        <div class="card">
+            <img src="img/image 10.png" alt="Avatar" class="img-cards">
+            <div class="informacao-cards">
+              <div class="texto-cards">
+                <h2>Recife</h2>
+                <p>A partir de R$ 500</p>
+                <button class="btn-secao-card">SAIBA MAIS</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/image 11.png" alt="Avatar" class="img-cards">
+            <div class="informacao-cards">
+              <div class="texto-cards">
+                <h2>Blumenau</h2>
+                <p>A partir de R$ 350</p>
+                <button class="btn-secao-card">SAIBA MAIS</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/image 13.png" alt="Avatar" class="img-cards">
+            <div class="informacao-cards">
+              <div class="texto-cards">
+                <h2>Rio de Janeiro</h2>
+                <p>A partir de R$ 300</p>
+                <button class="btn-secao-card">SAIBA MAIS</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/image 12.png" alt="Avatar" class="img-cards">
+            <div class="informacao-cards">
+              <div class="texto-cards">
+                <h2>São Paulo</h2>
+                <p>A partir de R$ 400</p>
+                <button class="btn-secao-card">SAIBA MAIS</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/image 14.png" alt="Avatar" class="img-cards">
+            <div class="informacao-cards">
+              <div class="texto-cards">
+                <h2>Espírito Santo</h2>
+                <p>A partir de R$ 360</p>
+                <button class="btn-secao-card">SAIBA MAIS</button>
+              </div>
+            </div>
+        </div>
+
+        <!-- cards ver mais -->
         
+            <div class="card cards-adicionais" style="display: none;">
+                <img src="img/pexels-matheus-natan-2449231 2 (1).png" alt="Avatar">
+                <div class="informacao-cards">
+                    <div class="texto-cards">
+                      <h2>Distrito Federal</h2>
+                      <p>A partir de R$ 490</p>
+                      <button class="btn-secao-card">SAIBA MAIS</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card cards-adicionais" style="display: none;">
+                <img src="img/image 19.png" alt="Avatar">
+                <div class="informacao-cards">
+                    <div class="texto-cards">
+                      <h2>Minas Gerais</h2>
+                      <p>A partir de R$ 750</p>
+                      <button class="btn-secao-card">SAIBA MAIS</button>
+                    </div>
+                </div>
+            </div>
 
-        <div class="card">
-            <img src="img/image 13.png" alt="Avatar">
-            <h2>Card 4</h2>
-            <p>Conteúdo do Card 4.</p>
-        </div>
-        <div class="card">
-            <img src="img/image 12.png" alt="Avatar">
-            <h2>Card 5</h2>
-            <p>Conteúdo do Card 5.</p>
-        </div>
-        <div class="card">
-            <img src="img/image 14.png" alt="Avatar">
-            <h2>Card 6</h2>
-            <p>Conteúdo do Card 6.</p>
-        </div>
+            <div class="card cards-adicionais" style="display: none;">
+                <img src="img/image 20.png" alt="Avatar">
+                <div class="informacao-cards">
+                    <div class="texto-cards">
+                      <h2>Alagoas</h2>
+                      <p>A partir de R$ 640</p>
+                      <button class="btn-secao-card">SAIBA MAIS</button>
+                    </div>
+                </div>
+            </div>
+
         
     </div>
     <!-- CRIANDO BOTÃO VER MAIS DA HOME -->
-    <button class="btn-secao">VER MAIS</button>
+    <button onclick="verMais()" class="btn-secao">VER MAIS</button>
 </div>
 
 <!-- CRIANDO A SEÇÃO2 REFERENTE AO MAPS -->

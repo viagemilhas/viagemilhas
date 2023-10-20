@@ -9,7 +9,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    padding-bottom: 16px;
+    padding-bottom: 32px;
 }
 
 /* CARDS DA HOME */
@@ -19,22 +19,70 @@
     padding-left: 10%;
     padding-right: 10%;
     flex-wrap: wrap;
-  }
-  
-  .card {
-    border-radius: 30px;
-    padding: 20px 0;
-    width: 30%; /* Ajuste conforme necessário */
-    box-sizing: border-box;
-  }
-
-  .secao2{
-    padding-bottom: 32px;
-    padding-top: 32px;
-    text-align: center;
+    
 }
-  
+.secao2{
+  padding-bottom: 32px;
+  padding-top: 32px;
+  text-align: center;
+}
 
+.card {
+  position: relative;
+  padding: 20px 0;
+}
 
+.img-cards {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+.informacao-cards {
+  position: absolute;
+  display: flex;
+  border-radius: 30px;
+  margin: 20px 0; 
+  /* align-items: center; */
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.384);
+}
 
+.texto-cards {
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.btn-secao-card{
+  border: 1px solid var(--titulo-branco);/* grossura da borda, tipo da borda, cor */
+  border-radius: 100px;
+  background-color: transparent;
+  width: 80%;
+  height: 36px;
+  color: var(--titulo-branco);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  align-self: center;
+}
+
+.btn-secao-card:hover{
+  background-color: var(--titulo-branco);
+  color: var(--titulo-preto);
+  cursor: pointer;
+}
