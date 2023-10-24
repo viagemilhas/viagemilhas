@@ -1,0 +1,49 @@
+.img-sobrenos img{ /* alterar as configurações da imagem central*/
+    width: 490px; /* largura */
+    padding-top: -80px; /* distancia da parte superior */
+    margin-bottom: 50px;/* distancia da parte inferior */
+    border-radius: 30px; /* borda arredondada */
+    margin-left: 50px; /* distancia da esquerda */
+  }
+
+
+  .titulo-sobrenos{
+    color: var(--titulo-azul-ciano); /* cor da letra */
+    margin-left: 880px; /* distancia da esquerda */
+    margin-top: 50px; /* distancia da parte superior */
+    font-size: 30px;
+  }
+
+  .container{ /* configurações da caixa de texto, imagem e menu */
+    display:flex; /*deixa flexível */
+    align-items: center; /*coloca os elementos no centro */
+    margin-left: 80px; /* distancia da esquerda */
+    margin-right: 50px; /* distancia da direita */
+  }
+
+  .container p{  /* texto */
+    display:flex; /*deixa flexível */
+    margin-left: 100px; /* distancia da esquerda */
+    margin-right: 100px; /* distancia da direita */
+    font-size: 25px; /* tamanho da fonte */
+    margin-top: -50px; /* distancia da parte superior */
+    text-align: center; /* deixar texto centralizado/quebradinho e não alinhado */
+  }
+
+  @media screen and (max-width: 1020px){/* modificações para quando a tela for para 1440px */
+
+    .img-sobrenos img{ /* alterar as configurações da imagem central*/
+      width: 0px; /* largura */
+  }
+
+  .titulo-sobrenos{
+    margin-left: 50px; /* distancia da esquerda */
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.container p{  /* texto */
+  margin-top: -120px; /* distancia da parte superior */
+  padding-bottom: 50px;
+}
+  } 
