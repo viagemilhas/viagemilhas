@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!--Link do estilo CSS para estilizar a tela de Cadastro-->
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/components/header.css"/>
+    <link rel="stylesheet" href="css/components/footer.css"/>
+</head>
+<body>
+
+<!--Criando o Header do Cadastro-->
+
+<header class="header-home">
+    <img class="logo" src="img/logo.png" alt="Logo da Viagemilhas">
+</header>
+
+
+<main class="Fundo-Login">
+<form class="formulario" name="formulario" id="formulario" method="post"  enctype ="test/plain">
+    <div>
+        <h3 class="Cadastro">CADASTRA-SE</h3>
+            <div class="Container-input">
+                <label class="teste" for="txtnome">Nome:</label>
+                <input class="texto" type ="text" name="txtnome" id="txtnome" id="txtnome" placeholder="Digite o seu Nome" maxlength="40" required/>
+            </div>
+            <div class="Container-input">
+                <label  class="teste" for="txtemail">Email:</label>
+                <input class="texto" type ="email" name="txtemail" id="txtemail" id="txtemail" placeholder="Digite o seu Email" maxlength="40" required/>
+            </div>
+            <div class="Container-input">
+                <label class="teste" for="txtsenha">Senha:</label>
+                <input  class="texto" type ="password" name="txtsenha" id="txtsenha" id="txtsenha" placeholder="Digite a sua Senha" maxlength="20" required/>
+            </div>
+            <div class="Container-input">
+                <label for="txttelefone">Telefone:</label>
+                <input class="Texto2" type ="tel" name="txttelefone" id="txttelefone" id="txttelefone" placeholder="Digite o seu telefone" maxlength="20" required/>
+                <label for="txtrg">RG:</label>
+                <input class="Texto2" type ="txtrg" name="txtrg" id="txtrg" id="txtrg" placeholder="Digite o seu rg" maxlength="20" />
+             </div>
+            <div>
+                <a href="index.html"><button type="button">Cadastrar</button></a>
+            </div>
+    </div>
+    
+</form>
+</main>
+<!--Criando o Footer do Cadastro-->
+<footer class="footer-container">
+    <p class="text-footer">&copy;  2023 Viagemilhas LTDA.</p>
+
+    <div class="btn-icon-footer">
+        <a href="https://www.facebook.com/profile.php?id=61552068467225&is_tour_dismissed=true" target="_blank">
+            <img src="img/facebook.png">
+        </a>
+
+        <a href="https://www.instagram.com/viagem_milhas_2008/" target="_blank">
+            <img src="img/instagram.png">
+        </a>
+
+        <a href="https://www.linkedin.com/in/viagem-milhas-466581295/" target="_blank">
+            <img src="img/linkedin.png">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
