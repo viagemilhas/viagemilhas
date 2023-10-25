@@ -13,6 +13,13 @@
     align-self: center;
   }
 
+  .botões{
+    display: flex;
+    margin-bottom:10px;
+  }
+
+
   .btn-icon-footer{
+    FLEX-DIRECTION: ROW;
     display: flex;
   }
