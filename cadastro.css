@@ -29,6 +29,7 @@
     text-align: center;
     
 }
+/* */
 .Container-input{
 padding:12px 6px;
 }
@@ -46,6 +47,7 @@ width:16%;
     color:var(--titulo-laranja);
     /* margin-bottom:20px; */
     margin-bottom: 30px;
+    margin-top:-20px;
   }
 
 button{
