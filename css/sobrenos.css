@@ -1,17 +1,22 @@
 .img-sobrenos img{ /* alterar as configurações da imagem central*/
-    width: 490px; /* largura */
-    padding-top: -80px; /* distancia da parte superior */
-    margin-bottom: 50px;/* distancia da parte inferior */
+    width: 690px; /* largura */
+    margin-top: -45%; /* distancia da parte superior  */
+    margin-bottom: 5px; /*distancia da parte inferior*/
     border-radius: 30px; /* borda arredondada */
-    margin-left: 50px; /* distancia da esquerda */
+    margin-left: -15px; /* distancia da esquerda */
+    align-self: center;
   }
 
 
   .titulo-sobrenos{
     color: var(--titulo-azul-ciano); /* cor da letra */
-    margin-left: 880px; /* distancia da esquerda */
-    margin-top: 50px; /* distancia da parte superior */
-    font-size: 30px;
+    margin-left: 920px; /* distancia da esquerda */
+    margin-top: 148px; /* distancia da parte superior */ 
+    font-size: 40px; /* tamanho da letra */
+    margin-bottom: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700px; 
+
   }
 
   .container{ /* configurações da caixa de texto, imagem e menu */
@@ -19,18 +24,23 @@
     align-items: center; /*coloca os elementos no centro */
     margin-left: 80px; /* distancia da esquerda */
     margin-right: 50px; /* distancia da direita */
+    height: 100vh; /* tamanho da tela 100% */ 
   }
 
   .container p{  /* texto */
     display:flex; /*deixa flexível */
-    margin-left: 100px; /* distancia da esquerda */
-    margin-right: 100px; /* distancia da direita */
-    font-size: 25px; /* tamanho da fonte */
-    margin-top: -50px; /* distancia da parte superior */
-    text-align: center; /* deixar texto centralizado/quebradinho e não alinhado */
+    margin-left: 50px; /* distancia da esquerda */
+    margin-right: 30px; /* distancia da direita */
+    font-size: 30px; /* tamanho da fonte */
+    margin-top: -100px;  /*distancia parte superior */
+    margin-bottom: 200px;
+    text-align: center; /* deixar texto centralizado*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700px;
+
   }
 
-  @media screen and (max-width: 1020px){/* modificações para quando a tela for para 1440px */
+  @media screen and (max-width: 1024px){/* modificações para quando a tela for para -1024px */ 
 
     .img-sobrenos img{ /* alterar as configurações da imagem central*/
       width: 0px; /* largura */
@@ -38,12 +48,22 @@
 
   .titulo-sobrenos{
     margin-left: 50px; /* distancia da esquerda */
-    padding-bottom: 150px;
-    text-align: center;
+    text-align: center; /* deixa o texto centralizado */
+    font-size: 35px;    /*tamanho da fonte*/
+    margin-bottom: -250px; /* distancia da parte inferior */
+    margin-top: 600px; /*distancia parte superior*/
 }
 
 .container p{  /* texto */
   margin-top: -120px; /* distancia da parte superior */
-  padding-bottom: 50px;
+  padding-bottom: 400px; /* distancia da parte inferior */
+  font-size: 35px; /*tamanho da fonte*/
 }
   } 
+
+
+
+
+
+
+ 
