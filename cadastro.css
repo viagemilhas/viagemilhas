@@ -3,22 +3,23 @@
 
 
 /*COLOCANDO A IMAGEM COMO PLANO DE FUNDO DO SITE*/
-.Fundo-Login{
+.Fundo-Login-img{
     background-image:url("img/fundo-login.jpg");
     background-repeat: no-repeat; 
-    background-size: 100% 100%;
-    filter:contrast(70%);
+    background-size: 100% 100%; /*Ajustando o tamanho da imagem como plano de fundo*/
+    filter:contrast(70%);/*Ajustando  Modo de Imagem do site*/
     width:100%;
     height:100vh;
     padding-top:10%;
     justify-content: center;
     display: flex;
     }
+
 /*Estilizando o formulario*/
 .formulario{
     position: relative;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    background-color:#fff;
+    border-radius: 30px;
     /* flex-direction: row; */
      display: flex;
     height: 80%;
@@ -29,32 +30,59 @@
     text-align: center;
     
 }
-/* */
+/* Estilizando os Containers do Cadastro */
 .Container-input{
 padding:12px 6px;
+margin-top:20px;
+font-size: 29px;
 }
+
+/*Estilização dos campos de preenchimento Nome, Email e Senha*/
 .texto{
-font-size: 16px;
-
+font-size: 23px;
+width:67%;
+border-radius: 30px;
+background-color: var( --fundo-cinzinha);
+border-style: solid;
 }
+
+/*Estilização dos campos de preenchimento Telefone e RG*/
 .Texto2{
-width:16%;
+width:27%;
+font-size: 22px;
+border-radius: 30px;
+background-color: var( --fundo-cinzinha);
+border-style: solid;
 }
 
+/* estilizacão do título da tela de Cadastro */
 .Cadastro{
     text-align: center;
     font-size:40px;
     color:var(--titulo-laranja);
-    /* margin-bottom:20px; */
-    margin-bottom: 30px;
-    margin-top:-20px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    margin-top: 30px;
   }
 
-button{
+/* comportamento do botão cadastrar */
+.botão{
     height:50px;
-    width:100px;
-    margin-left: 45%;
-    margin-top:10px;
-    /* margin-bottom:50%; */
-    
+    width:202px;
+    margin-left: 34%;
+    margin-top:7%;
+    border-radius: 100px;
+    border-color:var(--titulo-laranja) !important;
+    border-style: solid;
+    color:var(--titulo-laranja);
+    font-size: 20px;
+   background-color:white ;
+   cursor: pointer;
+}
+
+/* tirando o traço de baixo da palavra do botão */
+.button, a{
+    text-decoration:none;
+    padding-top: 16px;
+    cursor: auto;
 }

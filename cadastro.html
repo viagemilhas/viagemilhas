@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <!--Link do estilo CSS para estilizar a tela de Cadastro-->
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="cadastro.css"/>
     <link rel="stylesheet" href="css/global.css"/>
     <link rel="stylesheet" href="css/components/header.css"/>
     <link rel="stylesheet" href="css/components/footer.css"/>
@@ -18,33 +18,41 @@
 
 <header class="header-home">
     <img class="logo" src="img/logo.png" alt="Logo da Viagemilhas">
+    <!--Adicionando o logo da Viagemilhas-->
 </header>
 
-
-<main class="Fundo-Login">
+<!--Adicionando a imagem como plano de fundo do Main do Cadastro-->
+<main class="Fundo-Login-img">
+    <!--Criando  o Formulário de Cadastro-->
 <form class="formulario" name="formulario" id="formulario" method="post"  enctype ="test/plain">
+    <!--Criação da div para a organização do Cadastro-->
     <div>
-        <h3 class="Cadastro">CADASTRA-SE</h3>
-            <div class="Container-input">
-                <label class="teste" for="txtnome">Nome:</label>
-                <input class="texto" type ="text" name="txtnome" id="txtnome" id="txtnome" placeholder="Digite o seu Nome" maxlength="40" required/>
+        <!--Class Cadastro para estilizar o título do Cadastro-->
+    
+            <h3 class="Cadastro">CADASTRO</h3>
+            <div class="Container-input"> <!--Estilização dos Containers dos campos de Cadastro-->
+                <label  for="txtnome">Nome:</label>
+                <!--Estilização dos campos de preenchimento nome, email e senha-->
+                <input class="texto" type ="text" name="txtnome" id="txtnome"  placeholder=" Digite o seu Nome" maxlength="40" required/>
             </div>
             <div class="Container-input">
-                <label  class="teste" for="txtemail">Email:</label>
-                <input class="texto" type ="email" name="txtemail" id="txtemail" id="txtemail" placeholder="Digite o seu Email" maxlength="40" required/>
+                <label  for="txtemail">Email:</label>
+                <input class="texto" type ="email" name="txtemail" id="txtemail"  placeholder=" Digite o seu Email" maxlength="40" required/>
             </div>
             <div class="Container-input">
-                <label class="teste" for="txtsenha">Senha:</label>
-                <input  class="texto" type ="password" name="txtsenha" id="txtsenha" id="txtsenha" placeholder="Digite a sua Senha" maxlength="20" required/>
+                <label  for="txtsenha">Senha:</label>
+                <input  class="texto" type ="password" name="txtsenha" id="txtsenha"  placeholder=" Digite a sua Senha" maxlength="20" required/>
             </div>
             <div class="Container-input">
-                <label for="txttelefone">Telefone:</label>
-                <input class="Texto2" type ="tel" name="txttelefone" id="txttelefone" id="txttelefone" placeholder="Digite o seu telefone" maxlength="20" required/>
-                <label for="txtrg">RG:</label>
-                <input class="Texto2" type ="txtrg" name="txtrg" id="txtrg" id="txtrg" placeholder="Digite o seu rg" maxlength="20" />
+                <label for="itel">Telefone:</label>
+                <!--Estilização dos campos de preenchimento Telefone e RG-->
+                <input class="Texto2" type ="tel" name="tel" id="tel" patern="^\(d{2}\)d{4,5}-\d{4}S" placeholder=" (00) 00000-0000" maxlength="17" required/>
+                <label for="txtrg"> RG:</label>
+                <input class="Texto2" type ="txtrg" name="txtrg" id="txtrg" patern="^\(d{3}\).d{3}.\d{3}.\d{3}-\d{1}S"  placeholder="00.000.000-0" maxlength="12" />
              </div>
+             <!--Criação do botão de Cadastrar que vai direto a HomePage da Viagemilhas-->
             <div>
-                <a href="index.html"><button type="button">Cadastrar</button></a>
+               <a href="index.html"> <button class="botão" type="button">CADASTRAR</button></a>
             </div>
     </div>
     
@@ -53,7 +61,8 @@
 <!--Criando o Footer do Cadastro-->
 <footer class="footer-container">
     <p class="text-footer">&copy;  2023 Viagemilhas LTDA.</p>
-
+    
+    <!--Links das redes sociais da Viagemilhas dentro do Footer e com icone da rede social com link da página da Viagem Milhas -->
     <div class="btn-icon-footer">
         <a href="https://www.facebook.com/profile.php?id=61552068467225&is_tour_dismissed=true" target="_blank">
             <img src="img/facebook.png">
