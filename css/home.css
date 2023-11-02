@@ -30,6 +30,11 @@
 .card {
   position: relative;
   padding: 20px 0;
+  transition: transform 0.2s; /* Adicione uma transição suave */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta o tamanho em 5% quando o mouse passa por cima */
 }
 
 .img-cards {
