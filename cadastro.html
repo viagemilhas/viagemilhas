@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <!--Link do estilo CSS para estilizar a tela de Cadastro-->
-    <link rel="stylesheet" href="cadastro.css"/>
+    <link rel="stylesheet" href="cadastro.css">
     <link rel="stylesheet" href="css/global.css"/>
     <link rel="stylesheet" href="css/components/header.css"/>
     <link rel="stylesheet" href="css/components/footer.css"/>
@@ -27,32 +27,28 @@
 <form class="formulario" name="formulario" id="formulario" method="post"  enctype ="test/plain">
     <!--Criação da div para a organização do Cadastro-->
     <div>
-
         <!--Class Cadastro para estilizar o título do Cadastro-->
+    
             <h3 class="Cadastro">CADASTRO</h3>
             <div class="Container-input"> <!--Estilização dos Containers dos campos de Cadastro-->
-                <label  for="txtnome">Nome:</label>
+                <label class="campos" for="txtnome">Nome:</label>
                 <!--Estilização dos campos de preenchimento nome, email e senha-->
                 <input class="texto" type ="text" name="txtnome" id="txtnome"  placeholder=" Digite o seu Nome" maxlength="40" required/>
-        <h3 class="Cadastro">CADASTRE-SE</h3>
-            <div class="Container-input">
-                <label class="teste" for="txtnome">Nome:</label>
-                <input class="texto" type ="text" name="txtnome" id="txtnome" id="txtnome" placeholder="Digite o seu Nome" maxlength="40" required/>
             </div>
             <div class="Container-input">
-                <label  for="txtemail">Email:</label>
+                <label class="campos" for="txtemail">Email:</label>
                 <input class="texto" type ="email" name="txtemail" id="txtemail"  placeholder=" Digite o seu Email" maxlength="40" required/>
             </div>
             <div class="Container-input">
-                <label  for="txtsenha">Senha:</label>
+                <label class="campos" for="txtsenha">Senha:</label>
                 <input  class="texto" type ="password" name="txtsenha" id="txtsenha"  placeholder=" Digite a sua Senha" maxlength="20" required/>
             </div>
             <div class="Container-input">
-                <label for="itel">Telefone:</label>
+                <label class="campos"for="itel">Telefone:</label>
                 <!--Estilização dos campos de preenchimento Telefone e RG-->
                 <input class="Texto2" type ="tel" name="tel" id="tel" patern="^\(d{2}\)d{4,5}-\d{4}S" placeholder=" (00) 00000-0000" maxlength="17" required/>
-                <label for="txtrg"> RG:</label>
-                <input class="Texto2" type ="txtrg" name="txtrg" id="txtrg" patern="^\(d{3}\).d{3}.\d{3}.\d{3}-\d{1}S"  placeholder="00.000.000-0" maxlength="12" />
+                <label class="campos"for="txtrg"> RG:</label>
+                <input class="Texto2" type ="txtrg" name="txtrg" id="txtrg" patern="^\(d{3}\).d{3}.\d{3}.\d{3}-\d{1}S"  placeholder="  00.000.000-0" maxlength="20" />
              </div>
              <!--Criação do botão de Cadastrar que vai direto a HomePage da Viagemilhas-->
             <div>
