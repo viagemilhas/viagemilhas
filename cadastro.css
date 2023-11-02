@@ -195,7 +195,7 @@ border-style: solid;
         }
      
 }
-
+/* utilizando media query para ajustar a tela de cadastro para telas com no máximo de largura de 667px */
 @media screen and(min-width:768px) and (max-width:1024px) {
     .Cadastro{
         text-align: center;
