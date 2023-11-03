@@ -1,0 +1,44 @@
+.oii {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Adicionei isso para centralizar horizontalmente */
+    height: 100vh; /* Usei a altura da janela para centralizar verticalmente */
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .selo {
+    padding-top: 60px;
+    padding-bottom: 42px;
+    margin: 0 auto;
+    width: 30%;
+  }
+  
+  .sub-confirm {
+    text-align: center;
+    color: var(--titulo-cinza-escuro);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 12px;
+    padding-bottom: 42px;
+  }
+
+  .btn-confirm{
+    border: 1px solid var(--titulo-azul-ciano);/* grossura da borda, tipo da borda, cor */
+    border-radius: 100px;
+    background-color: transparent;
+    width: 15%;
+    height: 36px;
+    color: var(--titulo-azul-ciano);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    align-self: center;
+  }
+  
+  .btn-confirm:hover{
+    background-color: var(--titulo-azul-ciano);
+    color: var(--titulo-branco);
+    cursor: pointer;
+  }
