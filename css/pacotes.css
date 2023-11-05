@@ -32,7 +32,7 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     flex-wrap: wrap;
     /* border-color:black ; */
     
@@ -47,6 +47,7 @@
     background-color: var(--titulo-branco);
     transition: transform 0.2s; /* Adiciona uma transição suave */
     cursor: pointer;
+    margin-bottom: 25px;
   }
 
   .card-pacote:hover {

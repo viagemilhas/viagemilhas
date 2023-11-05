@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/components/footer.css"/>
     <!-- CHAMANDO O JAVASCRIPT, ESTANDO DENTRO DA PASTA JS -->
     <script type="text/javascript" src="js/pacotes.js"></script>
+    <script type="text/javascript" src="js/vermais-pacotes1.js"></script>
+    <script type="text/javascript" src="js/vermais-pacotes2.js"></script>
 </head>
 <body>
     <header class="header-home">
@@ -29,12 +31,12 @@
     </header>
 
     <!-- CRIANDO A SEÇÃO1 REFERENTE AOS CARDS -->
-<div class="secao1-pacotes" onclick="redirecionamento()">
+<div class="secao1-pacotes">
     <h1 class="titulo-secao1-pacotes">PACOTES DE VIAGENS ATÉ R$1000</h1>
     <p class="sub-secao1-pacotes">Mega descontos por tempo limitado, parcele em até 12x iguais!</p>
 
     <div class="card-container-pacote">
-        <div class="card-pacote">
+        <div class="card-pacote" onclick="redirecionamento()">
             <img src="img/pacote-sp.png" alt="Avatar" class="img-cards-pacote">
             <div class="informacao-cards-pacote">
               <div class="texto-cards-pacote">
@@ -50,7 +52,7 @@
             </div>
         </div>
 
-        <div class="card-pacote">
+        <div class="card-pacote"  onclick="redirecionamento()">
             <img src="img/pacote-curitiba.png" alt="Avatar" class="img-cards-pacote">
             <div class="informacao-cards-pacote">
               <div class="texto-cards-pacote">
@@ -66,7 +68,7 @@
             </div>
         </div>
 
-        <div class="card-pacote">
+        <div class="card-pacote"  onclick="redirecionamento()">
             <img src="img/pacote-rj.png" alt="Avatar" class="img-cards-pacote">
             <div class="informacao-cards-pacote">
               <div class="texto-cards-pacote">
@@ -82,57 +84,68 @@
             </div>
         </div>
 
-       
-        <!-- cards ver mais -->
-        
-            <!-- <div class="card cards-adicionais" style="display: none;">
-                <img src="img/pexels-matheus-natan-2449231 2 (1).png" alt="Avatar">
-                <div class="informacao-cards">
-                    <div class="texto-cards">
-                      <h2>Distrito Federal</h2>
-                      <p>A partir de R$ 490</p>
-                      <button class="btn-secao-card">SAIBA MAIS</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card cards-adicionais" style="display: none;">
-                <img src="img/image 19.png" alt="Avatar">
-                <div class="informacao-cards">
-                    <div class="texto-cards">
-                      <h2>Minas Gerais</h2>
-                      <p>A partir de R$ 750</p>
-                      <button class="btn-secao-card">SAIBA MAIS</button>
-                    </div>
-                </div>
-            </div>
+         <!-- cards ver mais quando ativado -->
 
-            <div class="card cards-adicionais" style="display: none;">
-                <img src="img/image 20.png" alt="Avatar">
-                <div class="informacao-cards">
-                    <div class="texto-cards">
-                      <h2>Alagoas</h2>
-                      <p>A partir de R$ 640</p>
-                      <button class="btn-secao-card">SAIBA MAIS</button>
-                    </div>
-                </div>
-            </div> -->
+         <div class="card-pacote card-pacote-vermais1" onclick="redirecionamento()" style="display: none;">
+          <img src="img/pacote-brasilia.png" alt="Avatar" class="img-cards-pacote">
+          <div class="informacao-cards-pacote">
+            <div class="texto-cards-pacote">
+              <h2 class="titulo-card-pacotes">Pacotes para Brasília</h2>
+              <p class="sub-card-pacotes1">Saindo de São Paulo</p>
+              <p class="sub-card-pacotes2">Hotel + Aéreo</p>
+              <hr class="linha-colorida">
+              <p class="sub-card-pacotes3">Preço final por pessoa</p>
+              <p class="sub-card-pacotes4">R$ 745</p>
+              <p class="sub-card-pacotes5">Taxas e impostos inclusos</p>
+            </div>
+          </div>
+      </div>
 
-        
+      <div class="card-pacote card-pacote-vermais1" onclick="redirecionamento()" style="display: none;">
+        <img src="img/pacote-bahia.png" alt="Avatar" class="img-cards-pacote">
+        <div class="informacao-cards-pacote">
+          <div class="texto-cards-pacote">
+            <h2 class="titulo-card-pacotes">Pacotes para Bahia</h2>
+            <p class="sub-card-pacotes1">Saindo de São Paulo</p>
+            <p class="sub-card-pacotes2">Hotel + Aéreo</p>
+            <hr class="linha-colorida">
+            <p class="sub-card-pacotes3">Preço final por pessoa</p>
+            <p class="sub-card-pacotes4">R$ 680</p>
+            <p class="sub-card-pacotes5">Taxas e impostos inclusos</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="card-pacote card-pacote-vermais1" onclick="redirecionamento()" style="display: none;">
+      <img src="img/pacote-florianópolis.png" alt="Avatar" class="img-cards-pacote">
+      <div class="informacao-cards-pacote">
+        <div class="texto-cards-pacote">
+          <h2 class="titulo-card-pacotes">Pacotes para Florianópolis</h2>
+          <p class="sub-card-pacotes1">Saindo de São Paulo</p>
+          <p class="sub-card-pacotes2">Hotel + Aéreo</p>
+          <hr class="linha-colorida">
+          <p class="sub-card-pacotes3">Preço final por pessoa</p>
+          <p class="sub-card-pacotes4">R$ 695</p>
+          <p class="sub-card-pacotes5">Taxas e impostos inclusos</p>
+        </div>
+      </div>
+  </div>
+
     </div>
     <br/>
     <!-- CRIANDO BOTÃO VER MAIS DA HOME -->
-    <button onclick="verMais()" class="btn-secao">VER MAIS</button>
+    <button onclick="verMaispacotes1()" class="btn-secao">VER MAIS</button>
     <br/>
     <br/>
     <br/>
-    <!-- CRIANDO A SEÇÃO1 REFERENTE AOS CARDS -->
+
+    <!-- CRIANDO A SEÇÃO2 REFERENTE AOS CARDS -->
 <div class="secao2-pacotes">
     <h1 class="titulo-secao2-pacotes">PACOTES DE VIAGENS INTERNACIONAIS</h1>
    
 
     <div class="card-container-pacote">
-        <div class="card-pacote">
+        <div class="card-pacote" onclick="redirecionamento()">
             <img src="img/pacote-ny.png" alt="Avatar" class="img-cards-pacote">
             <div class="informacao-cards-pacote">
               <div class="texto-cards-pacote">
@@ -148,7 +161,7 @@
             </div>
         </div>
 
-        <div class="card-pacote">
+        <div class="card-pacote" onclick="redirecionamento()">
             <img src="img/pacote-frança.png" alt="Avatar" class="img-cards-pacote">
             <div class="informacao-cards-pacote">
               <div class="texto-cards-pacote">
@@ -164,7 +177,7 @@
             </div>
         </div>
 
-        <div class="card-pacote">
+        <div class="card-pacote" onclick="redirecionamento()">
             <img src="img/pacote-zurique.png" alt="Avatar" class="img-cards-pacote">
             <div class="informacao-cards-pacote">
               <div class="texto-cards-pacote">
@@ -179,9 +192,57 @@
               </div>
             </div>
         </div>
+
+    <!-- cards ver mais quando ativado -->
+
+        <div class="card-pacote card-pacote-vermais2" onclick="redirecionamento()" style="display: none;">
+          <img src="img/pacote-saofrancisco.png" alt="Avatar" class="img-cards-pacote">
+          <div class="informacao-cards-pacote">
+            <div class="texto-cards-pacote">
+              <h2 class="titulo-card-pacotes">Pacotes para São Francisco</h2>
+              <p class="sub-card-pacotes1">Saindo de São Paulo</p>
+              <p class="sub-card-pacotes2">Hotel + Aéreo</p>
+              <hr class="linha-colorida">
+              <p class="sub-card-pacotes3">Preço final por pessoa</p>
+              <p class="sub-card-pacotes4">R$ 6420</p>
+              <p class="sub-card-pacotes5">Taxas e impostos inclusos</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="card-pacote card-pacote-vermais2" onclick="redirecionamento()" style="display: none;">
+        <img src="img/pacote-amsterdam-Holanda.png" alt="Avatar" class="img-cards-pacote">
+        <div class="informacao-cards-pacote">
+          <div class="texto-cards-pacote">
+            <h2 class="titulo-card-pacotes">Pacotes para Holanda</h2>
+            <p class="sub-card-pacotes1">Saindo de São Paulo</p>
+            <p class="sub-card-pacotes2">Hotel + Aéreo</p>
+            <hr class="linha-colorida">
+            <p class="sub-card-pacotes3">Preço final por pessoa</p>
+            <p class="sub-card-pacotes4">R$ 5350</p>
+            <p class="sub-card-pacotes5">Taxas e impostos inclusos</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="card-pacote card-pacote-vermais2" onclick="redirecionamento()" style="display: none;">
+      <img src="img/pacote-orlando.png" alt="Avatar" class="img-cards-pacote">
+      <div class="informacao-cards-pacote">
+        <div class="texto-cards-pacote">
+          <h2 class="titulo-card-pacotes">Pacotes para Orlando</h2>
+          <p class="sub-card-pacotes1">Saindo de São Paulo</p>
+          <p class="sub-card-pacotes2">Hotel + Aéreo</p>
+          <hr class="linha-colorida">
+          <p class="sub-card-pacotes3">Preço final por pessoa</p>
+          <p class="sub-card-pacotes4">R$ 5500</p>
+          <p class="sub-card-pacotes5">Taxas e impostos inclusos</p>
+        </div>
+      </div>
+  </div>
+
     </div>
     <br/>
-    <button onclick="verMais()" class="btn-secao">VER MAIS</button>
+    <button onclick="verMaispacotes2()" class="btn-secao">VER MAIS</button>
     <br/>
     <br/>
     <br/>
