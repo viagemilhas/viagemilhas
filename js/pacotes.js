@@ -2,5 +2,5 @@
 // o usuario clica em qualquer card
 
 function redirecionamento(){
-    window.location.href = "confirmaçao.html";
+    window.location.href = "confirmacao.html";
 }
