@@ -1,0 +1,56 @@
+.header-mobile{
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hamburguer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-mobile{
+    object-fit: contain;
+    width: auto;
+    height: 42px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .header-mobile{
+        display: block;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: auto;
+        background-color: white;
+    }
+
+    .mobile-links{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        background-color: white;
+        text-align: center;
+    }
+
+    .header-mobile .mobile-links .mobile-ul .mobile-li{
+        padding: 16px 0;
+    }
+
+    /* COR DA LETRA DA PÁGINA HOME */
+    .header-mobile .mobile-links .mobile-ul .mobile-li .mobile-a {
+        color: var(--titulo-laranja)!important;/* chamando a cor da variavel global, para facilitar na hora de procurar a # da cor */
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    /* QUANDO O USUARIO PASSAR O CLICAR EM ALGUMA DAS OPÇÕES DO HEADER, FICARA CINZA-ESCURO */
+    .header-mobile .mobile-links .mobile-ul .mobile-li .mobile-a:active {
+        color: var(--titulo-cinza-escuro);
+    }
+
+}

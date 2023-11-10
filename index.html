@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Viagemilhas</title>
-    <!-- CHAMANDO O ICONE DO SITE, ESTANDO DENTRO DA PASTA IMG -->
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
-     <!-- CHAMANDO O CSS RESPONSAVEL PELOS CARDS DA HOME, ESTANDO DENTRO DA PASTA CSS -->
-    <link rel="stylesheet" href="css/home.css"/>
-    <!-- CHAMANDO O CSS GLOBAL, ESTANDO DENTRO DA PASTA CSS -->
-    <link rel="stylesheet" href="css/global.css"/>
-    <!-- CHAMANDO O CSS DO HEADER, ESTANDO DENTRO DA PASTA CSS + COMPONENTS -->
-    <link rel="stylesheet" href="css/components/header.css"/>
-    <!-- CHAMANDO O JAVASCRIPT, RESPONSAVEL PELO CARROSSEL, ESTANDO DENTRO DA PASTA CSS + COMPONENTS -->
-    <link rel="stylesheet" href="css/components/carrossel.css"/>
-    <!-- CHAMANDO O JAVASCRIPT, ESTANDO DENTRO DA PASTA JS -->
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/home.js"></script>
-    <!-- CHAMANDO O FOOTER, ESTANDO DENTRO DA PASTA CSS -->
-    <link rel="stylesheet" href="css/components/footer.css"/>
-</head>
-<body onload="showSlides()">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Viagemilhas</title>
+      <!-- CHAMANDO O ICONE DO SITE, ESTANDO DENTRO DA PASTA IMG -->
+      <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+      <!-- CHAMANDO O CSS RESPONSAVEL PELOS CARDS DA HOME, ESTANDO DENTRO DA PASTA CSS -->
+      <link rel="stylesheet" href="css/home.css"/>
+      <!-- CHAMANDO O CSS GLOBAL, ESTANDO DENTRO DA PASTA CSS -->
+      <link rel="stylesheet" href="css/global.css"/>
+      <!-- CHAMANDO O CSS DO HEADER, ESTANDO DENTRO DA PASTA CSS + COMPONENTS -->
+      <link rel="stylesheet" href="css/components/header.css"/>
+      <link rel="stylesheet" href="css/components/header-mobile.css"/>
+      <!-- CHAMANDO O JAVASCRIPT, RESPONSAVEL PELO CARROSSEL, ESTANDO DENTRO DA PASTA CSS + COMPONENTS -->
+      <link rel="stylesheet" href="css/components/carrossel.css"/>
+      <!-- CHAMANDO O JAVASCRIPT, ESTANDO DENTRO DA PASTA JS -->
+      <script type="text/javascript" src="js/index.js"></script>
+      <script type="text/javascript" src="js/home.js"></script>
+      <script type="text/javascript" src="js/menu.js"></script>
+      <!-- CHAMANDO O FOOTER, ESTANDO DENTRO DA PASTA CSS -->
+      <link rel="stylesheet" href="css/components/footer.css"/>
+
+  </head>
+  <body onload="showSlides()">
     <header class="header-home">
       <img class="logo" src="img/logo.png" alt="Logo da Viagemilhas">
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                      <li><a href="sobrenos.html">SOBRE NÓS</a></li>
-                      <li><a href="pacotes.html">PACOTES</a></li>
-                      <li><a href="cadastro.html">CADASTRO</a></li>
-                  </ul>
-              </nav>
-      </header>
- 
+      <nav class="desktop-links">
+        <ul class="desktop-ul">
+          <li class="desktop-li"><a class="desktop-a" href="index.html">HOME</a></li>
+          <li class="desktop-li"><a class="desktop-a" href="sobrenos.html">SOBRE NÓS</a></li>
+          <li class="desktop-li"><a class="desktop-a" href="pacotes.html">PACOTES</a></li>
+          <li class="desktop-li"><a class="desktop-a" href="cadastro.html">CADASTRO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="header-mobile">
+      <div class="hamburguer">
+        <img class="logo-mobile" src="img/logo.png" alt="Logo da Viagemilhas" height="36px">
+        <img class="icon-hamburguer" src="img/menu-icon1.png" alt="Logo da Viagemilhas" height="48px" onclick="showMenu()">
+      </div>
+
+      <nav class="mobile-links" style="display: none;">
+        <ul class="mobile-ul">
+          <li class="mobile-li"><a class="mobile-a" href="index.html">HOME</a></li>
+          <li class="mobile-li"><a class="mobile-a" href="sobrenos.html">SOBRE NÓS</a></li>
+          <li class="mobile-li"><a class="mobile-a" href="pacotes.html">PACOTES</a></li>
+          <li class="mobile-li"><a class="mobile-a" href="cadastro.html">CADASTRO</a></li>
+        </ul>
+      </nav>
+    </div>
+  
     <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -49,152 +70,151 @@
             <img class="img-slide" src="img/homeGreece.jpg">
         </div>
     </div>
+    <br>
 
-<br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+    </div>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
-  <span class="dot"></span> 
-</div>
+    <!-- CRIANDO A SEÇÃO1 REFERENTE AOS CARDS -->
+    <div class="secao1">
+        <h1 class="titulo-secao">LUGARES A CONHECER</h1>
 
-<!-- CRIANDO A SEÇÃO1 REFERENTE AOS CARDS -->
-<div class="secao1">
-    <h1 class="titulo-secao">LUGARES A CONHECER</h1>
-
-    <div class="card-container">
-        <div class="card">
-            <img src="img/image 9.png" alt="Avatar" class="img-cards">
-            <div class="informacao-cards">
-              <div class="texto-cards">
-                <h2>Salvador</h2>
-                <p>A partir de R$ 300</p>
-                <button class="btn-secao-card">SAIBA MAIS</button>
-              </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/image 10.png" alt="Avatar" class="img-cards">
-            <div class="informacao-cards">
-              <div class="texto-cards">
-                <h2>Recife</h2>
-                <p>A partir de R$ 500</p>
-                <button class="btn-secao-card">SAIBA MAIS</button>
-              </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/image 11.png" alt="Avatar" class="img-cards">
-            <div class="informacao-cards">
-              <div class="texto-cards">
-                <h2>Blumenau</h2>
-                <p>A partir de R$ 350</p>
-                <button class="btn-secao-card">SAIBA MAIS</button>
-              </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/image 13.png" alt="Avatar" class="img-cards">
-            <div class="informacao-cards">
-              <div class="texto-cards">
-                <h2>Rio de Janeiro</h2>
-                <p>A partir de R$ 300</p>
-                <button class="btn-secao-card">SAIBA MAIS</button>
-              </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/image 12.png" alt="Avatar" class="img-cards">
-            <div class="informacao-cards">
-              <div class="texto-cards">
-                <h2>São Paulo</h2>
-                <p>A partir de R$ 400</p>
-                <button class="btn-secao-card">SAIBA MAIS</button>
-              </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/image 14.png" alt="Avatar" class="img-cards">
-            <div class="informacao-cards">
-              <div class="texto-cards">
-                <h2>Espírito Santo</h2>
-                <p>A partir de R$ 360</p>
-                <button class="btn-secao-card">SAIBA MAIS</button>
-              </div>
-            </div>
-        </div>
-
-        <!-- cards ver mais -->
-        
-            <div class="card cards-adicionais" style="display: none;">
-                <img src="img/pexels-matheus-natan-2449231 2 (1).png" alt="Avatar">
+        <div class="card-container">
+            <div class="card">
+                <img src="img/image 9.png" alt="Avatar" class="img-cards">
                 <div class="informacao-cards">
-                    <div class="texto-cards">
-                      <h2>Distrito Federal</h2>
-                      <p>A partir de R$ 490</p>
-                      <button class="btn-secao-card">SAIBA MAIS</button>
-                    </div>
+                  <div class="texto-cards">
+                    <h2>Salvador</h2>
+                    <p>A partir de R$ 300</p>
+                    <button class="btn-secao-card">SAIBA MAIS</button>
+                  </div>
                 </div>
             </div>
+
+            <div class="card">
+                <img src="img/image 10.png" alt="Avatar" class="img-cards">
+                <div class="informacao-cards">
+                  <div class="texto-cards">
+                    <h2>Recife</h2>
+                    <p>A partir de R$ 500</p>
+                    <button class="btn-secao-card">SAIBA MAIS</button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/image 11.png" alt="Avatar" class="img-cards">
+                <div class="informacao-cards">
+                  <div class="texto-cards">
+                    <h2>Blumenau</h2>
+                    <p>A partir de R$ 350</p>
+                    <button class="btn-secao-card">SAIBA MAIS</button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/image 13.png" alt="Avatar" class="img-cards">
+                <div class="informacao-cards">
+                  <div class="texto-cards">
+                    <h2>Rio de Janeiro</h2>
+                    <p>A partir de R$ 300</p>
+                    <button class="btn-secao-card">SAIBA MAIS</button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/image 12.png" alt="Avatar" class="img-cards">
+                <div class="informacao-cards">
+                  <div class="texto-cards">
+                    <h2>São Paulo</h2>
+                    <p>A partir de R$ 400</p>
+                    <button class="btn-secao-card">SAIBA MAIS</button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/image 14.png" alt="Avatar" class="img-cards">
+                <div class="informacao-cards">
+                  <div class="texto-cards">
+                    <h2>Espírito Santo</h2>
+                    <p>A partir de R$ 360</p>
+                    <button class="btn-secao-card">SAIBA MAIS</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- cards ver mais -->
             
-            <div class="card cards-adicionais" style="display: none;">
-                <img src="img/image 19.png" alt="Avatar">
-                <div class="informacao-cards">
-                    <div class="texto-cards">
-                      <h2>Minas Gerais</h2>
-                      <p>A partir de R$ 750</p>
-                      <button class="btn-secao-card">SAIBA MAIS</button>
+                <div class="card cards-adicionais" style="display: none;">
+                    <img src="img/pexels-matheus-natan-2449231 2 (1).png" alt="Avatar" class="img-cards">
+                    <div class="informacao-cards">
+                        <div class="texto-cards">
+                          <h2>Distrito Federal</h2>
+                          <p>A partir de R$ 490</p>
+                          <button class="btn-secao-card">SAIBA MAIS</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="card cards-adicionais" style="display: none;">
-                <img src="img/image 20.png" alt="Avatar">
-                <div class="informacao-cards">
-                    <div class="texto-cards">
-                      <h2>Alagoas</h2>
-                      <p>A partir de R$ 640</p>
-                      <button class="btn-secao-card">SAIBA MAIS</button>
+                
+                <div class="card cards-adicionais" style="display: none;">
+                    <img src="img/image 19.png" alt="Avatar" class="img-cards">
+                    <div class="informacao-cards">
+                        <div class="texto-cards">
+                          <h2>Minas Gerais</h2>
+                          <p>A partir de R$ 750</p>
+                          <button class="btn-secao-card">SAIBA MAIS</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        
+                <div class="card cards-adicionais" style="display: none;">
+                    <img src="img/image 20.png" alt="Avatar" class="img-cards">
+                    <div class="informacao-cards">
+                        <div class="texto-cards">
+                          <h2>Alagoas</h2>
+                          <p>A partir de R$ 640</p>
+                          <button class="btn-secao-card">SAIBA MAIS</button>
+                        </div>
+                    </div>
+                </div>
+
+            
+        </div>
+        <!-- CRIANDO BOTÃO VER MAIS DA HOME -->
+        <button onclick="verMais()" class="btn-secao">VER MAIS</button>
     </div>
-    <!-- CRIANDO BOTÃO VER MAIS DA HOME -->
-    <button onclick="verMais()" class="btn-secao">VER MAIS</button>
-</div>
 
-<!-- CRIANDO A SEÇÃO2 REFERENTE AO MAPS -->
-<div class="secao2">
-    <h1 class="titulo-secao">NOSSA LOCALIZAÇÃO</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.0019742552927!2d-46.73036142534401!3d-23.520813660102455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e1!3m2!1spt-BR!2sbr!4v1697675557694!5m2!1spt-BR!2sbr" width="80%" height="450" style="border:0; padding-top: 20px; padding-bottom: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-
-<!-- CRIANDO FOOTER -->
-<footer class="footer-container">
-    <p class="text-footer">&copy;  2023 Viagemilhas LTDA.</p>
-
-    <div class="btn-icon-footer">
-        <a href="https://www.facebook.com/profile.php?id=61552068467225&is_tour_dismissed=true" target="_blank">
-            <img src="img/facebook.png">
-        </a>
-
-        <a href="https://www.instagram.com/viagem_milhas_2008/" target="_blank">
-            <img src="img/instagram.png">
-        </a>
-
-        <a href="https://www.linkedin.com/in/viagem-milhas-466581295/" target="_blank">
-            <img src="img/linkedin.png">
-        </a>
+    <!-- CRIANDO A SEÇÃO2 REFERENTE AO MAPS -->
+    <div class="secao2">
+        <h1 class="titulo-secao">NOSSA LOCALIZAÇÃO</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.0019742552927!2d-46.73036142534401!3d-23.520813660102455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e1!3m2!1spt-BR!2sbr!4v1697675557694!5m2!1spt-BR!2sbr" width="80%" height="450" style="border:0; padding-top: 20px; padding-bottom: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-</footer>
 
-</body>
+    <!-- CRIANDO FOOTER -->
+    <footer class="footer-container">
+        <p class="text-footer">&copy;  2023 Viagemilhas LTDA.</p>
+
+        <div class="btn-icon-footer">
+            <a href="https://www.facebook.com/profile.php?id=61552068467225&is_tour_dismissed=true" target="_blank">
+                <img src="img/facebook.png">
+            </a>
+
+            <a href="https://www.instagram.com/viagem_milhas_2008/" target="_blank">
+                <img src="img/instagram.png">
+            </a>
+
+            <a href="https://www.linkedin.com/in/viagem-milhas-466581295/" target="_blank">
+                <img src="img/linkedin.png">
+            </a>
+        </div>
+    </footer>
+
+  </body>
 </html>

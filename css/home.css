@@ -91,3 +91,21 @@
   color: var(--titulo-preto);
   cursor: pointer;
 }
+
+@media only screen and (max-width: 677px){
+  .btn-secao{
+      width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 406px){
+  .informacao-cards{
+      height: auto!important;
+      border-radius: 20px;
+  }
+  .cards .cards-adicinais{
+    height: auto;
+    display: flex;
+    position: absolute;
+  }
+}

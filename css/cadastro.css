@@ -5,7 +5,7 @@
 
 /*COLOCANDO A IMAGEM COMO PLANO DE FUNDO DO SITE*/
 .Fundo-Login-img{
-    background-image:url("img/fundo-login.jpg");
+    background-image:url("../img/fundo-login.jpg");
     background-repeat: no-repeat; 
     background-size: 100% 100%; /*Ajustando o tamanho da imagem como plano de fundo*/
     filter:contrast(70%);/*Ajustando  Modo de Imagem do site*/
@@ -155,7 +155,7 @@ border-style: solid;
         }
         
         .Fundo-Login-img{
-        background-image:url("img/fundo-login.jpg");
+        background-image:url("../img/fundo-login.jpg");
        
         }
         
@@ -210,7 +210,7 @@ border-style: solid;
             }
             
             .Fundo-Login-img{
-            background-image:url("img/fundo-login.jpg");
+            background-image:url("../img/fundo-login.jpg");
            
             }
             

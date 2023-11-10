@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viagemilhas</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="css/global.css"/>
@@ -9,11 +10,37 @@
     <link rel="stylesheet" href="css/components/header.css"/>
     <link rel="stylesheet" href="css/components/footer.css"/>
     <script type="text/javascript" src="js/confirmacao.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/components/header-mobile.css"/>
 </head>
 <body>
     <header class="header-home">
         <img class="logo" src="img/logo.png" alt="Logo da Viagemilhas">
-    </header>
+        <nav class="desktop-links">
+          <ul class="desktop-ul">
+            <li class="desktop-li"><a class="desktop-a" href="index.html">HOME</a></li>
+            <li class="desktop-li"><a class="desktop-a" href="sobrenos.html">SOBRE NÓS</a></li>
+            <li class="desktop-li"><a class="desktop-a" href="pacotes.html">PACOTES</a></li>
+            <li class="desktop-li"><a class="desktop-a" href="cadastro.html">CADASTRO</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <div class="header-mobile">
+        <div class="hamburguer">
+          <img class="logo-mobile" src="img/logo.png" alt="Logo da Viagemilhas" height="36px">
+          <img class="icon-hamburguer" src="img/menu-icon1.png" alt="Logo da Viagemilhas" height="48px" onclick="showMenu()">
+        </div>
+  
+        <nav class="mobile-links" style="display: none;">
+          <ul class="mobile-ul">
+            <li class="mobile-li"><a class="mobile-a" href="index.html">HOME</a></li>
+            <li class="mobile-li"><a class="mobile-a" href="sobrenos.html">SOBRE NÓS</a></li>
+            <li class="mobile-li"><a class="mobile-a" href="pacotes.html">PACOTES</a></li>
+            <li class="mobile-li"><a class="mobile-a" href="cadastro.html">CADASTRO</a></li>
+          </ul>
+        </nav>
+      </div>
         
     <div class="oii">
         <img class="selo" src="img/confirmação.png"  alt="Selo de Confirmação">

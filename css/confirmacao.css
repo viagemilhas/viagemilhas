@@ -13,6 +13,7 @@
     padding-bottom: 42px;
     margin: 0 auto;
     width: 30%;
+    object-fit: cover;
   }
   
   .sub-confirm {
@@ -41,4 +42,16 @@
     background-color: var(--titulo-azul-ciano);
     color: var(--titulo-branco);
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 765px){
+    .btn-confirm{
+      width: auto !important;
+    }
+    .selo{
+      width:50% !important;
+    }
+    .oii{
+      padding-bottom: 61px;
+    }
   }

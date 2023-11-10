@@ -16,7 +16,7 @@
     height: 70px;
 }
 
-nav, ul, li, a{
+.desktop-links, .desktop-ul, .desktop-li, .desktop-a{
     list-style: none;
     padding-left: 8px;/* ESPAÇAMENTO DE UM ELEMENTO LI A OUTRO */
     display: flex;
@@ -25,17 +25,27 @@ nav, ul, li, a{
 }
 
 /* COR DA LETRA DA PÁGINA HOME */
-.header-home nav ul li a {
+.header-home .desktop-links .desktop-ul .desktop-li .desktop-a {
     color: var(--titulo-laranja);/* chamando a cor da variavel global, para facilitar na hora de procurar a # da cor */
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     text-decoration: none;
 }
 /* QUANDO O USUARIO PASSAR O MOUSE EM CIMA DAS OPÇÕES DO HEADER, FICARA AZUL-CIANO */
-.header-home nav ul li a:hover{
+.header-home .desktop-links .desktop-ul .desktop-li .desktop-a:hover{
     color: var(--titulo-azul-ciano);
 }
 /* QUANDO O USUARIO PASSAR O CLICAR EM ALGUMA DAS OPÇÕES DO HEADER, FICARA CINZA-ESCURO */
-.header-home nav ul li a:active {
+.header-home .desktop-links .desktop-ul .desktop-li .desktop-a:active {
     color: var(--titulo-cinza-escuro);
+}
+
+@media only screen and (max-width: 768px){
+    .header-home{
+        /* height: 64px;
+        background-color: greenyellow;
+        padding-left: 10%;
+        padding-right: 10%;  */
+        display: none;
+    }
 }
