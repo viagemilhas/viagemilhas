@@ -8,7 +8,7 @@
   }
 
   .container{ /* configurações da caixa de texto, imagem */
-     display:flex; /*deixa flexível */
+    display:flex; /*deixa flexível */
     align-items: center; /*coloca os elementos no centro */
     margin-left: 80px; /* distancia da esquerda */
     margin-right: 50px; /* distancia da direita */
@@ -23,7 +23,6 @@
     margin-bottom: 200px; /* distancia da parte inferior */
     text-align: center; /* deixar texto centralizado */
     font-family: 'Open Sans', sans-serif; /* estilo da fonte */
-    font-weight: 700px; /* tamanho da fonte */
   }
 
   span{ /* modificar apenas uma palavra */
@@ -41,8 +40,14 @@
 
  .container p{  /* texto */
    margin-top: 10px; /* distancia da parte superior */
-   margin-bottom: 10px; /* distancia da parte inferior */
-   font-size: 30px; /*tamanho da fonte*/
+   margin-bottom: 15px; /* distancia da parte inferior */
+   font-size: 17px; /*tamanho da fonte*/
+   margin-left: -50px; /* distancia da esquerda */
+   margin-right: -15px; /* distancia da direita */
+  }
+
+  span{
+    font-size: 30px; /* tamanho da fonte */
   }
 }
 
