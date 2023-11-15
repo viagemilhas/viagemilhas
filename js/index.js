@@ -18,3 +18,7 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+function setarCidade(cidade){
+  window.sessionStorage.setItem("cidade", cidade);
+  window.location.href = "voos.html";
+}

@@ -1,0 +1,90 @@
+.container-voos{
+    padding-bottom: 64px;
+    padding-top: 32px;
+    text-align: center;
+    height: auto;
+    
+}
+
+/* CARDS DA HOME */
+.card-container-voos {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    /* height: 70%; */
+}
+
+.card-voos{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #FFF3EB;
+    transition: transform 0.2s; /* Adiciona uma transição suave */
+    cursor: auto;
+    margin-bottom: 25px;
+
+}
+
+.secao2{
+    padding-bottom: 32px;
+    padding-top: 32px;
+    text-align: center;
+  }
+
+  .informacoes-voos{
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--titulo-preto)
+  }
+
+  .informacoes-voos-preco{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 5px 0px;
+    font-size: 20px;
+    color: var(--titulo-laranja)
+  }
+
+  .btn-card-voos{
+    border: 1px solid var(--titulo-laranja);/* grossura da borda, tipo da borda, cor */
+    border-radius: 100px;
+    background-color: transparent;
+    width: 13%;
+    height: 36px;
+    color: var(--titulo-laranja);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .btn-card-voos:hover{
+    border: 1px solid var(--titulo-laranja);
+    color: var(--titulo-branco);
+    background-color: var(--titulo-laranja);
+  }
+
+  .titulo-secao-voos{
+    color: var(--titulo-laranja);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 32px;
+}
+
+.lugar{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--titulo-branco)
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagemilhas</title>
+    <!-- CHAMANDO O ICONE DO SITE, ESTANDO DENTRO DA PASTA IMG -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <!-- CHAMANDO O CSS GLOBAL, ESTANDO DENTRO DA PASTA CSS -->
+    <link rel="stylesheet" href="css/global.css"/>
+    <!-- CHAMANDO O CSS DA PÁGINA "SOBRE NÓS"-->
+    <link rel="stylesheet" href="css/sobrenos.css">
+    <link rel="stylesheet" href="css/components/header-mobile.css"/>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/voos.js"></script>
+    <link rel="stylesheet" href="css/voos.css"/>
+    <!-- CHAMANDO O CSS DO HEADER, ESTANDO DENTRO DA PASTA CSS + COMPONENTS -->
+    <link rel="stylesheet" href="css/components/header.css"/>
+    <!-- CHAMANDO O FOOTER, ESTANDO DENTRO DA PASTA CSS -->
+    <link rel="stylesheet" href="css/components/footer.css"/>
+
+</head>
+<body onload="getCidade()">
+    <header class="header-home">
+        <img class="logo" src="img/logo.png" alt="Logo da Viagemilhas">
+        <nav class="desktop-links">
+          <ul class="desktop-ul">
+            <li class="desktop-li"><a class="desktop-a" href="index.html">HOME</a></li>
+            <li class="desktop-li"><a class="desktop-a" href="sobrenos.html">SOBRE NÓS</a></li>
+            <li class="desktop-li"><a class="desktop-a" href="pacotes.html">PACOTES</a></li>
+            <li class="desktop-li"><a class="desktop-a" href="cadastro.html">CADASTRO</a></li>
+          </ul>
+        </nav>
+    </header>
+  
+    <div class="header-mobile">
+    <div class="hamburguer">
+        <img class="logo-mobile" src="img/logo.png" alt="Logo da Viagemilhas" height="36px">
+        <img class="icon-hamburguer" src="img/menu-icon1.png" alt="Logo da Viagemilhas" height="48px" onclick="showMenu()">
+    </div>
+
+    <nav class="mobile-links" style="display: none;">
+        <ul class="mobile-ul">
+        <li class="mobile-li"><a class="mobile-a" href="index.html">HOME</a></li>
+        <li class="mobile-li"><a class="mobile-a" href="sobrenos.html">SOBRE NÓS</a></li>
+        <li class="mobile-li"><a class="mobile-a" href="pacotes.html">PACOTES</a></li>
+        <li class="mobile-li"><a class="mobile-a" href="cadastro.html">CADASTRO</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <!-- CONTEÚDO DA SUA PÁGINA-->
+    <div class="container-voos">
+        <h1 class="titulo-secao-voos">PRÓXIMOS VOOS</h1>
+        <p class="lugar" id="nomeCidade"></p>
+
+        <div class="card-container-voos" id="lista-cards">
+            <!-- <div class="card-voos">
+                <div>
+                    <p class="informacoes-voos">Salvador</p>
+                    <p class="informacoes-voos">Salvador</p>
+                </div>
+
+                <div>
+                    <p class="informacoes-voos">A partir de R$ 300</p>
+                    <p class="informacoes-voos">A partir de R$ 300</p>
+                    <p class="informacoes-voos-preco">A partir de R$ 300</p>
+                </div>
+
+                <button class="btn-card-voos" onclick="confirmarVoo()">COMPRAR</button>
+            </div> -->
+        </div> 
+    </div>
+         
+    <!-- CRIANDO FOOTER -->
+    <footer class="footer-container">
+        <p class="text-footer">&copy;  2023 Viagemilhas LTDA.</p>
+
+        <div class="btn-icon-footer">
+            <a href="https://www.facebook.com/profile.php?id=61552068467225&is_tour_dismissed=true" target="_blank">
+                <img src="img/facebook.png">
+            </a>
+
+            <a href="https://www.instagram.com/viagem_milhas_2008/" target="_blank">
+                <img src="img/instagram.png">
+            </a>
+
+            <a href="https://www.linkedin.com/in/viagem-milhas-466581295/" target="_blank">
+                <img src="img/linkedin.png">
+            </a>
+        </div>
+    </footer>
+</body>
