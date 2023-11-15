@@ -43,7 +43,7 @@
     font-family: 'Open Sans', sans-serif;
     padding: 5px 0px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--titulo-preto)
   }
 
@@ -58,9 +58,9 @@
   .btn-card-voos{
     border: 1px solid var(--titulo-laranja);/* grossura da borda, tipo da borda, cor */
     border-radius: 100px;
+    padding: 2px 16px;
     background-color: transparent;
-    width: 13%;
-    height: 36px;
+    height: 42px;
     color: var(--titulo-laranja);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -87,4 +87,21 @@
     font-weight: 500;
     font-size: 20px;
     color: var(--titulo-branco)
+}
+
+.card-column{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 677px){
+  .card-voos{
+      flex-direction: column !important;
+  }
+
+  .card-column{
+    padding: 10px 0;
+  }
 }

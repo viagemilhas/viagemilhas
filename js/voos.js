@@ -127,7 +127,7 @@ let lista_voos = [
     },
     { 
         cidade: 'Brasília', 
-        img_fundo: "img/imgbrasilia_fundo.png",
+        img_fundo: "img/imgbrasiia_fundo.png",
         voos: [ 
             {
                 data: "06/11/2023",
@@ -211,16 +211,15 @@ function getCidade(){
     let cards = "";
     for(let i = 0; i < cidade.voos.length; i++){
         cards += `<div class="card-voos">
-            <div>
+            <div class="card-column">
                 <p class="informacoes-voos">Partida: São Paulo</p>
                 <p class="informacoes-voos">Destino: ${cidade.cidade}</p>
             </div>
-            <div>
+            <div class="card-column">
                 <p class="informacoes-voos">Data: ${cidade.voos[i].data}</p>
                 <p class="informacoes-voos">Horário: ${cidade.voos[i].horario}</p>
                 <p class="informacoes-voos-preco">R$ ${cidade.voos[i].preco}</p>
             </div>
-        
             <button class="btn-card-voos" onclick="confirmarVoo()">COMPRAR</button>
         </div>`
     }
