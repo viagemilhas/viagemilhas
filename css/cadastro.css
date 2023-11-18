@@ -70,7 +70,7 @@ border-style: solid;
 .botão{
     height:50px;
     width:202px;
-    margin-left: 34%;
+    margin-left: 3%;
     margin-top:1%;
     border-radius: 100px;
     border-color:var(--titulo-laranja) !important;
@@ -127,7 +127,7 @@ border-style: solid;
     .botão{
         height:40px;
         width:150px;
-        margin-left:15%;
+        margin-left:10%;
         border-radius:100px;
         align-items: center;
         font-size:12px;
@@ -182,7 +182,7 @@ border-style: solid;
         .botão{
             height:40px;
             width:150px;
-            margin-left:35%;
+            margin-left:5%;
             border-radius:100px;
             align-items: center;
             font-size:12px;
@@ -237,7 +237,7 @@ border-style: solid;
             .botão{
                 height:40px;
                 width:150px;
-                margin-left:30%;
+                margin-left:3%;
                 border-radius:100px;
                 align-items: center;
                 font-size:12px;
