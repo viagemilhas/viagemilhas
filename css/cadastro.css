@@ -1,14 +1,11 @@
-
 /* Importando a fonte */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
-
 
 /*COLOCANDO A IMAGEM COMO PLANO DE FUNDO DO SITE*/
 .Fundo-Login-img{
     background-image:url("../img/fundo-login.jpg");
     background-repeat: no-repeat; 
     background-size: 100% 100%; /*Ajustando o tamanho da imagem como plano de fundo*/
-    filter:contrast(70%);/*Ajustando  Modo de Imagem do site*/
     width:100%;
     height:100vh;
     padding-top:10%;
@@ -18,78 +15,108 @@
 
 /*Estilizando o formulario*/
 .formulario{
-    position: relative;
-    background-color:#fff;
+   
+    background-color:white;
     border-radius: 30px;
-    /* flex-direction: row; */
-     display: flex;
+    flex-direction: column;
+    display: flex;
     height: 80%;
     font-size:20px;
     width:55%;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    
+
 }
 /* Estilizando os Containers do Cadastro */
 .Container-input{
-padding:12px 6px;
-margin-top:20px;
-font-size: 29px;
+    padding:12px 6px;
+    margin-top:20px;
+    font-size: 29px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }
+
+.campos{
+    font-size: 14px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+    align-self: center !important;
+}
+
+/* .campos-tel{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.campos-rg{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+} */
 
 /*Estilização dos campos de preenchimento Nome, Email e Senha*/
 .texto{
-font-size: 23px;
-width:67%;
-border-radius: 30px;
-background-color: var( --fundo-cinzinha);
-border-style: solid;
+    margin: 0px 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    width:67%;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: var( --fundo-cinzinha);
+    border-style: solid;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*Estilização dos campos de preenchimento Telefone e RG*/
 .Texto2{
-width:27%;
-font-size: 22px;
-border-radius: 30px;
-background-color: var( --fundo-cinzinha);
-border-style: solid;
+    padding: 5px 10px;
+    width:fit-content;
+    font-size: 14px;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: var( --fundo-cinzinha);
+    border-style: solid;
 }
 
 /* estilizacão do título da tela de Cadastro */
-.Cadastro{
+.titulo-cadastro{
     text-align: center;
-    font-size:40px;
+    font-size:24px;
     color:var(--titulo-laranja);
     margin-bottom: 20px;
     font-weight: bold;
     margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /* comportamento do botão cadastrar */
-.botão{
-    height:50px;
-    width:202px;
-    margin-left: 3%;
-    margin-top:1%;
+.botao{
+    display: block;
+    height:40px;
+    text-decoration:none;
+    padding: 20px 10px 0;
     border-radius: 100px;
-    border-color:var(--titulo-laranja) !important;
-    border-style: solid;
+    border: 1px solid var(--titulo-laranja);
     color:var(--titulo-laranja);
-    font-size: 20px;
-   background-color:white ;
-   cursor: pointer;
+    background-color:white ;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+.botao:hover{
+    background-color: var(--titulo-laranja);
+    color: var(--titulo-branco);
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* tirando o traço de baixo da palavra do botão */
-.button, a{
-    text-decoration:none;
-    padding-top: 16px;
-    cursor: auto;
+.Container-tel{
+    display: flex;
+    justify-content: space-between;
+    width: 70% !important;
 }
 
 /* Utilizando media query para ajustar tela de cadastro para smartphones com tela de largura de 450px */
-@media (max-width:450px) {
+/* @media (max-width:450px) {
     .Cadastro{
     text-align: center;
     font-size:20px;
@@ -141,10 +168,10 @@ border-style: solid;
      font-size:10px;
     }
     
-    }
+    } */
 
     /* Adaptando a tela de cadastro para telas de 768px até 1024px */
-    @media (min-width:768px) and (max-width:1024px) {
+    /* @media (min-width:768px) and (max-width:1024px) {
         .Cadastro{
         text-align: center;
         font-size:30px;
@@ -196,10 +223,10 @@ border-style: solid;
          font-size:10px;
         }
         
-        }
+        } */
     
         /* Adaptando a tela de cadastro para telas de 452px até 750px */
-        @media (min-width:451px) and (max-width:750px)   {
+        /* @media (min-width:451px) and (max-width:750px)   {
             .Cadastro{
             text-align: center;
             font-size:20px;
@@ -251,4 +278,4 @@ border-style: solid;
              font-size:10px;
             }
             
-            }
+            } */
