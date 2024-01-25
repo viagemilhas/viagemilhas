@@ -151,6 +151,10 @@
         width: 85%;
     }
 
+    .Fundo-Login-img{
+        background: var(--fundo-cinza-claro);
+    }
+
 }
 /* Utilizando media query para ajustar tela de cadastro para smartphones com tela de largura de 450px */
 /* @media (max-width:450px) {
