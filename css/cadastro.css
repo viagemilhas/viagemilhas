@@ -153,6 +153,7 @@
 
     .Fundo-Login-img{
         background: var(--fundo-cinza-claro);
+        height: 107vh;
     }
 
 }
