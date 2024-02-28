@@ -1,3 +1,35 @@
+.config{
+  cursor: pointer;
+  background-color: transparent; 
+  border: none;
+  transition: transform 0.2s; /* Adicione uma transição suave */
+  color: var(--titulo-laranja); 
+}
+
+.config-icon{
+  font-size: 30px;
+  background-color: transparent; 
+}
+
+.config:hover {
+  transform: scale(1.25); /* Aumenta o tamanho quando o mouse passa por cima */
+  /* color: var(--titulo-azul-ciano); */
+}
+
+.button-text{
+  font-size: 18px;
+  /* padding-left: 10px;  */
+  padding-top: 5px;
+  /* font-style: normal; */
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  color: var(--titulo-laranja)!important;
+  padding-bottom: 10px;
+}
+
+
+
 .secao1{
     padding-bottom: 32px;
     padding-top: 32px;
@@ -96,6 +128,11 @@
   .btn-secao{
       width: 40% !important;
   }
+
+  .config-icon{
+    font-size: 28px;
+}
+
 }
 
 @media only screen and (max-width: 406px){

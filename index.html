@@ -22,10 +22,27 @@
       <!-- CHAMANDO O FOOTER, ESTANDO DENTRO DA PASTA CSS -->
       <link rel="stylesheet" href="css/components/footer.css"/>
 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+
   </head>
-  <body onload="showSlides()">
-    <header class="header-home">
+  <body onload="showSlides(); checarModo()">
+    <header class="header-home" >
       <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo da Viagemilhas"></a>
+
+      <p class="button-text"> </p>
+        <button class="config" type="button" onclick="changeModeWhite()">
+          <i id="icon-color" class="bi bi-sun-fill config-icon mode-white">
+          <!-- <span class="button-text">Habilitar modo</span> -->
+          </i>
+                </button>
+                
+                <button class="config" type="button" onclick="changeModeDark()">
+                    <i id="icon-color2" class="bi bi-moon-stars-fill config-icon mode-white">
+                        <!-- <span class="button-text">Habilitar modo</span> -->
+                    </i>
+                </button>
+
       <nav class="desktop-links">
         <ul class="desktop-ul">
           <li class="desktop-li"><a class="desktop-a" href="index.html">HOME</a></li>
@@ -36,7 +53,7 @@
       </nav>
     </header>
 
-    <div class="header-mobile">
+    <div class="header-mobile" id="header-mobile">
       <div class="hamburguer">
         <a href="index.html"><img class="logo-mobile" src="img/logo.png" alt="Logo da Viagemilhas" height="36px"></a>
         <img class="icon-hamburguer" src="img/menu-icon1.png" alt="Logo da Viagemilhas" height="48px" onclick="showMenu()">
@@ -49,6 +66,20 @@
           <li class="mobile-li"><a class="mobile-a" href="pacotes.html">PACOTES</a></li>
           <li class="mobile-li"><a class="mobile-a" href="cadastro.html">CADASTRO</a></li>
         </ul>
+
+        <hr class="linha-colorida">
+        <p class="button-text">MODOS: </p>
+        <button class="config" type="button" onclick="changeModeWhite()">
+          <i id="icon-color" class="bi bi-sun-fill config-icon mode-white">
+          <!-- <span class="button-text">Habilitar modo</span> -->
+          </i>
+                </button>
+                
+                <button class="config" type="button" onclick="changeModeDark()">
+                    <i id="icon-color2" class="bi bi-moon-stars-fill config-icon mode-white">
+                        <!-- <span class="button-text">Habilitar modo</span> -->
+                    </i>
+                </button>
       </nav>
     </div>
   
@@ -89,7 +120,7 @@
                 <div class="informacao-cards">
                   <div class="texto-cards">
                     <h2>Salvador</h2>
-                    <p>A partir de R$ 300</p>
+                    <p>A partir de R$ 305</p>
                     <button class="btn-secao-card" onclick="setarCidade('Salvador')">SAIBA MAIS</button>
                   </div>
                 </div>
@@ -100,7 +131,7 @@
                 <div class="informacao-cards">
                   <div class="texto-cards">
                     <h2>Recife</h2>
-                    <p>A partir de R$ 500</p>
+                    <p>A partir de R$ 300</p>
                     <button class="btn-secao-card" onclick="setarCidade('Recife')">SAIBA MAIS</button>
                   </div>
                 </div>
@@ -111,7 +142,7 @@
                 <div class="informacao-cards">
                   <div class="texto-cards">
                     <h2>Blumenau</h2>
-                    <p>A partir de R$ 350</p>
+                    <p>A partir de R$ 197</p>
                     <button class="btn-secao-card" onclick="setarCidade('Blumenau')">SAIBA MAIS</button>
                   </div>
                 </div>
@@ -122,7 +153,7 @@
                 <div class="informacao-cards">
                   <div class="texto-cards">
                     <h2>Rio de Janeiro</h2>
-                    <p>A partir de R$ 300</p>
+                    <p>A partir de R$ 250</p>
                     <button class="btn-secao-card" onclick="setarCidade('Rio de Janeiro')">SAIBA MAIS</button>
                   </div>
                 </div>
@@ -133,7 +164,7 @@
                 <div class="informacao-cards">
                   <div class="texto-cards">
                     <h2>São Paulo</h2>
-                    <p>A partir de R$ 400</p>
+                    <p>A partir de R$ 500</p>
                     <button class="btn-secao-card" onclick="setarCidade('São Paulo')">SAIBA MAIS</button>
                   </div>
                 </div>
@@ -144,7 +175,7 @@
                 <div class="informacao-cards">
                   <div class="texto-cards">
                     <h2>Vitória</h2>
-                    <p>A partir de R$ 360</p>
+                    <p>A partir de R$ 333</p>
                     <button class="btn-secao-card" onclick="setarCidade('Vitória')">SAIBA MAIS</button>
                   </div>
                 </div>
@@ -157,7 +188,7 @@
                     <div class="informacao-cards">
                         <div class="texto-cards">
                           <h2>Brasília</h2>
-                          <p>A partir de R$ 490</p>
+                          <p>A partir de R$ 480</p>
                           <button class="btn-secao-card" onclick="setarCidade('Brasília')">SAIBA MAIS</button>
                         </div>
                     </div>
@@ -168,7 +199,7 @@
                     <div class="informacao-cards">
                         <div class="texto-cards">
                           <h2>Belo Horizonte</h2>
-                          <p>A partir de R$ 750</p>
+                          <p>A partir de R$ 170</p>
                           <button class="btn-secao-card" onclick="setarCidade('Belo Horizonte')">SAIBA MAIS</button>
                         </div>
                     </div>
@@ -179,7 +210,7 @@
                     <div class="informacao-cards">
                         <div class="texto-cards">
                           <h2>Maceió</h2>
-                          <p>A partir de R$ 640</p>
+                          <p>A partir de R$ 300</p>
                           <button class="btn-secao-card" onclick="setarCidade('Maceió')">SAIBA MAIS</button>
                         </div>
                     </div>
@@ -198,8 +229,8 @@
     </div>
 
     <!-- CRIANDO FOOTER -->
-    <footer class="footer-container">
-        <p class="text-footer">&copy;  2023 Viagemilhas LTDA.</p>
+    <footer class="footer-container" >
+        <p class="text-footer" id="brancop">&copy;  2024 Viagemilhas LTDA.</p>
 
         <div class="btn-icon-footer">
             <a href="https://www.facebook.com/profile.php?id=61552068467225&is_tour_dismissed=true" target="_blank">

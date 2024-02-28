@@ -52,6 +52,25 @@ body{
     background-color: var(--fundo-cinza-claro);
 }
 
+.altera{
+    background-color: #333 !important;
+}
+
+.darkheader{
+    background-color: #181818 !important;
+}
+
+.whitep{
+    color: white !important;
+}
+
+.fundoLog{
+    background-image:url("../img/IMGnoite.jpg")!important;
+}
+.subs{
+    color: var(--fundo-cinza-claro)!important;
+}
+
 .btn-secao{
     border: 1px solid var(--titulo-laranja);/* grossura da borda, tipo da borda, cor */
     border-radius: 100px;

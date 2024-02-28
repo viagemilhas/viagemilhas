@@ -12,10 +12,27 @@
     <script type="text/javascript" src="js/confirmacao.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
     <link rel="stylesheet" href="css/components/header-mobile.css"/>
+    <script type="text/javascript" src="js/home.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/home.css"/>
 </head>
-<body>
-    <header class="header-home">
+<body onload="checarModo()">
+    <header class="header-home" onload="checarModo()">
       <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo da Viagemilhas"></a>
+
+      <p class="button-text"> </p>
+        <button class="config" type="button" onclick="changeModeWhite()">
+          <i id="icon-color" class="bi bi-sun-fill config-icon mode-white">
+          <!-- <span class="button-text">Habilitar modo</span> -->
+          </i>
+                </button>
+                
+                <button class="config" type="button" onclick="changeModeDark()">
+                    <i id="icon-color2" class="bi bi-moon-stars-fill config-icon mode-white">
+                        <!-- <span class="button-text">Habilitar modo</span> -->
+                    </i>
+                </button>
+
         <nav class="desktop-links">
           <ul class="desktop-ul">
             <li class="desktop-li"><a class="desktop-a" href="index.html">HOME</a></li>
@@ -26,7 +43,7 @@
         </nav>
       </header>
   
-      <div class="header-mobile">
+      <div class="header-mobile" id="header-mobile">
         <div class="hamburguer">
           <a href="index.html"><img class="logo-mobile" src="img/logo.png" alt="Logo da Viagemilhas" height="36px"></a>
           <img class="icon-hamburguer" src="img/menu-icon1.png" alt="Logo da Viagemilhas" height="48px" onclick="showMenu()">
@@ -39,18 +56,32 @@
             <li class="mobile-li"><a class="mobile-a" href="pacotes.html">PACOTES</a></li>
             <li class="mobile-li"><a class="mobile-a" href="cadastro.html">CADASTRO</a></li>
           </ul>
+
+          <hr class="linha-colorida">
+          <p class="button-text">MODOS: </p>
+        <button class="config" type="button" onclick="changeModeWhite()">
+          <i id="icon-color" class="bi bi-sun-fill config-icon mode-white">
+          <!-- <span class="button-text">Habilitar modo</span> -->
+          </i>
+                </button>
+                
+                <button class="config" type="button" onclick="changeModeDark()">
+                    <i id="icon-color2" class="bi bi-moon-stars-fill config-icon mode-white">
+                        <!-- <span class="button-text">Habilitar modo</span> -->
+                    </i>
+                </button>
         </nav>
       </div>
         
     <div class="oii">
         <img class="selo" src="img/confirmação.png"  alt="Selo de Confirmação">
-        <p class="sub-confirm">Parabéns, sua compra foi realizada com sucesso!</p>
+        <p class="sub-confirm" id="subt">Parabéns, sua compra foi realizada com sucesso!</p>
         <button onclick="voltarhome()" class="btn-confirm">VOLTAR PARA TELA DE INÍCIO</button>
     </div>
     
 
     <footer class="footer-container">
-        <p class="text-footer">&copy; 2023 Viagemilhas LTDA.</p>
+        <p class="text-footer" id="brancop">&copy; 2024 Viagemilhas LTDA.</p>
     
         <div class="btn-icon-footer">
             <a href="https://www.facebook.com/profile.php?id=61552068467225&is_tour_dismissed=true" target="_blank">
